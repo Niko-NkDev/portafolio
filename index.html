@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/logo1.jpg">
+    <title>Portafolio Nicolas</title>
+</head>
+
+<body>
+    <!-- SECCION DE INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <a href="#inicio"><img src="images/logo1.jpg" width="45" class="logonk"></a>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" onclick="seleccionar(this)" class="seleccionado">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- ICONOS DEL MENU RESPONSIVE -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ICONOS DE LAS REDES SOCIALES -->
+                    <div class="redes">
+                        <a href="https://github.com/Niko-NkDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/nicolas.cortesgarcia.1/" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/nico.nkd/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nicolas-cortes29/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Nicolas Cortes</span>, Desarrollador Web</span></h2>
+                <p class="descripcion">Soy un desarrollador de software profesional especializado en la creación,
+                    diseño, implementación y mantenimiento de aplicaciones y sistemas informáticos.</p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="images/foto1.jpg">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">SOBRE MI</p>
+            <h2>Hola, Soy <span>Nicolas Cortes</span></h2>
+            <h3>Desarrollador de Software Junior</h3>
+            <p>Como desarrollador FrontEnd Junior con experiencia en tecnologías como Angular, React; conocimientos en
+                Java con Spring Boot, motores de base de datos relacionales y no relacionales tales como MySQL y
+                MongoDB, soy un apasionado en crear interfaces de usuario interactivas y atractivas que mejoren la
+                experiencia del usuario.
+                <br>Estoy constantemente aprendiendo y buscando oportunidades para mejorar mis habilidades técnicas y
+                contribuir al éxito del equipo.
+            </p>
+            <a href="/assets/Hoja de Vida Nicolas Cortes.pdf" download="Hoja de Vida Nicolas Cortes">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                <h4>Diseño Web</h4>
+                <hr>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JS</li>
+                </ul>
+                <P>Diseño y desarrollo de interfaces de usuario (UI) atractivas y responsivas utilizando HTML, CSS y
+                    JavaScript. Este servicio está dirigido a proyectos que necesitan una presencia web visualmente
+                    atractiva y funcional en diferentes dispositivos y tamaños de pantalla.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-java"></i></span>
+                <h4>Desarrollo de APIs RESTful</h4>
+                <hr>
+                <ul>
+                    <li>JAVA</li>
+                    <li>SpringBoot</li>
+                    <li>SQL</li>
+                </ul>
+                <P>Diseño y desarrollo de APIs RESTful utilizando Spring Boot, con enfoque en operaciones CRUD (Crear,
+                    Leer, Actualizar, Eliminar). Este servicio está dirigido a empresas y proyectos que necesitan una
+                    API para gestionar datos de manera eficiente y segura.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-react"></i></span>
+                <h4>Desarrollo de aplicaciones SPA</h4>
+                <hr>
+                <ul>
+                    <li>TypeScript</li>
+                    <li>React</li>
+                    <li>JavaScript</li>
+                </ul>
+                <P>Construcción y mantenimiento de aplicaciones SPA (Single Page Applications) con React.js.<br><br>
+                    Implementación de componentes reutilizables y optimización de la performance del frontend.</P>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-github"></i></span>
+                <h4>Control de Versiones y Colaboración</h4>
+                <hr>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+                <P>Servicios de control de versiones y colaboración utilizando Git y GitHub. Este servicio está dirigido
+                    a equipos de desarrollo y proyectos individuales que necesitan una gestión eficiente del código
+                    fuente y colaboración en equipo.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Diseño y Gestión de Bases de Datos</h4>
+                <hr>
+                <ul>
+                    <li>SQL</li>
+                    <li>NoSQL</li>
+                </ul>
+                <P>Diseño e implementación de bases de datos relacionales con MySQL.<br><br>
+                    Diseño e implementación de bases de datos NoSQL con MongoDB.</P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-users"></i></span>
+                <h4>Metodologia de Desarrollo</h4>
+                <hr>
+                <ul>
+                    <li></li>
+                    <li>Scrum</li>
+                    <li></li>
+                </ul>
+                <P>metodología ágil utilizada para la gestión y desarrollo de proyectos de software. Se centra en la
+                    entrega incremental y iterativa de productos, promoviendo la flexibilidad y la adaptación a los
+                    cambios. En Scrum, el trabajo se divide en ciclos cortos llamados sprints, que suelen durar entre
+                    una y cuatro semanas.</P>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>HTML & CSS</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">65%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JAVA</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://drive.google.com/drive/folders/1xh_XriS2sJTD4MCNUvqrhKTIJr7J80zq?usp=sharing" target="_blank"><img src="images/proyecto1.png"></a>
+                <div class="info">
+                    <h4>Trabajos SENA Ficha 2627085</h4>
+                    <p>Proyecto</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://github.com/Niko-NkDev/my-school-app-react" target="_blank"><img src="images/proyecto2.jpg" alt=""></a>
+                <div class="info">
+                    <h4>Proyecto My School APP</h4>
+                    <p>Aplicación web desarrollada con React</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://github.com/Niko-NkDev/login-php-api" target="_blank"><img src="images/proyecto3.png"></a>
+                <div class="info">
+                    <h4>Aplicacion con PHP</h4>
+                    <p>Login y registro de aplicación web con PHP</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://github.com/Niko-NkDev/project-java-springboot" target="_blank"><img src="images/proyecto4.jpg"></a>
+                <div class="info">
+                    <h4>Proyecto JAVA con SpringBoot</h4>
+                    <p>ApiRest de CRUD utilizando SpringBoot y MySQL</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://github.com/Niko-NkDev/webapp-java" target="_blank"><img src="images/proyecto5.png"></a>
+                <div class="info">
+                    <h4>JAVA Servlets</h4>
+                    <p>Desarrollo de pagina web con Servlets</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://github.com/Niko-NkDev/java_prueba_jdbc_mysql" target="_blank"><img src="images/proyecto6.jpg"></a>
+                <div class="info">
+                    <h4>JAVA JDBC MySQL</h4>
+                    <p>Desarrollo con JAVA JDBC</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name=""" id="" cols=" 30" rows="10" placeholder="Escribe tu mensaje"
+                        class="input-full"></textarea>
+                </div>
+                <a href="mailto:jncg20@gmail.com"><input value="Enviar Correo" class="btn-enviar"></a>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+
+    <footer>
+        <p>Todos los Derechos Reservados. Nicolas Cortes - 2024</p>
+        <div class="redes">
+            <a href="https://github.com/Niko-NkDev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/nicolas.cortesgarcia.1/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/nico.nkd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nicolas-cortes29/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
